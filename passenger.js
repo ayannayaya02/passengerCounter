@@ -50,7 +50,14 @@ addOneLap();
 addOneLap();
 
 let treeNotification= "You have tree notfications";
-let greeting= "Hello,";
+let notification= "Don't forget,";
 function treeNotification(){
-console.log(greeting + ''+ treeNotification);
+console.log(notification + ''+ treeNotification);
 }
+
+const name = "Ayanna";
+const greeting= "Hi, my name is";
+const myGreeting =  greeting + name;
+//console.log(myGreeting);
+
+
