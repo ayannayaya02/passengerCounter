@@ -1,63 +1,33 @@
 
-//document.getElementById("count-el").innerText = 5;
-
-const myAge=21;
-const humanRatio = 10;
-let combination = myAge * humanRatio;
-console.log(combination);
-
-
-
 let countEl = document.getElementById("count-el");
-console.log(countEl);
-
+console.log("count-el");
+let saveEl= document.getElementById("save-el");
+console.log("save-el");
 let count= 0;
 
 function increment(){
     count=count+1;
     countEl.innerText=count;
-    console.log(count);
 }
 
 function save(){
+    let countStr = count + " - ";
+    saveEl.textContent += countStr;
+    countEl.textContent = 0;
+    count = 0;
+    //line 4 variable must match the above variable!
+    //everytime it restarts back from 0 and counts from there all over again!
     console.log(count);
 
+
+    //everytime the save button is clicked the number is reset to 0
+
 }
 
-function luckyNumber (){
-    console.log(42);
-}
-luckyNumber();
-
-let lap1=34;
-let lap2=33;
-let lap3=36;
-
-function totalLaps(){
-    let totalLaps=lap1 + lap2 +lap3;
-    console.log(totalLaps);
-}
-totalLaps();
 
 
-let completedLaps=0;
 
-function addOneLap(){
-completedLaps=completedLaps+1;
-}
-addOneLap();
-addOneLap();
-addOneLap();
 
-let treeNotification= "You have tree notfications";
-let notification= "Don't forget,";
-function treeNotification(){
-console.log(notification + ''+ treeNotification);
-}
 
-const name = "Ayanna";
-const greeting= "Hi, my name is";
-const myGreeting =  greeting + name;
-//console.log(myGreeting);
 
 
